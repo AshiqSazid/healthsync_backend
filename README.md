@@ -2,13 +2,13 @@
 
 ## Setup
 
-1. Copy the environment file and fill in the missing secrets:
+1. Copy the sample environment file and fill in the missing secrets locally:
 
 ```bash
 cp .env.example .env
 ```
 
-2. Add private local overrides in `backend/.env.local` for secrets you do not want in the tracked `.env` file:
+2. Add private local overrides in `backend/.env.local` for secrets you do not want in your local `.env` file:
 
 ```bash
 cat > .env.local <<'EOF'
@@ -43,7 +43,7 @@ Swagger UI: `https://health-synch-backend.vercel.app/docs`
 
 ## Vercel and Neon Postgres
 
-Use SQLite in the tracked `backend/.env` for local development and configure Neon only in Vercel.
+Use SQLite in your local `backend/.env` for development and configure Neon only in Vercel.
 
 Set these Vercel environment variables for the backend project:
 
@@ -59,10 +59,11 @@ DATABASE_URL_UNPOOLED=postgresql://....../neondb?sslmode=require
 
 Important:
 
-- Vercel must set `SQLALCHEMY_DATABASE_URI` explicitly. Setting only `DATABASE_URL` is not enough because the checked-in `backend/.env` keeps SQLite as the local fallback.
+- Vercel must set `SQLALCHEMY_DATABASE_URI` explicitly. Setting only `DATABASE_URL` is not enough because local development defaults to SQLite unless you opt into `LOCAL_DB_MODE=neon`.
 - Use the pooled Neon URL for runtime on Vercel.
 - Use `DATABASE_URL_UNPOOLED` or Vercel's `POSTGRES_URL_NON_POOLING` for Alembic/manual operations.
 - The app only auto-creates tables for SQLite. PostgreSQL schema changes must go through Alembic.
+- `ADMIN_BOOTSTRAP_ENABLED` is disabled by default. Only enable it with an explicit `ADMIN_BOOTSTRAP_PASSWORD` in a private environment.
 
 Run migrations against Neon from a trusted shell or CI runner:
 

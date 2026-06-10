@@ -67,7 +67,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str | None = None
     DATABASE_URL_UNPOOLED: str | None = None
     SQLALCHEMY_DATABASE_URI: str | None = None
-    LOCAL_DB_MODE: Literal["neon", "sqlite"] = "neon"
+    LOCAL_DB_MODE: Literal["neon", "sqlite"] = "sqlite"
     DB_EXPECTED_BACKEND: Literal["postgresql", "sqlite", "any"] = "postgresql"
     DB_ALLOW_SQLITE_FALLBACK: bool = False
     SQL_ECHO: bool = False
@@ -140,11 +140,11 @@ class Settings(BaseSettings):
     LOGIN_RATE_LIMIT_WINDOW_SECONDS: int = 900
     FORGOT_PASSWORD_RATE_LIMIT_ATTEMPTS: int = 3
     FORGOT_PASSWORD_RATE_LIMIT_WINDOW_SECONDS: int = 3600
-    ADMIN_BOOTSTRAP_ENABLED: bool = True
+    ADMIN_BOOTSTRAP_ENABLED: bool = False
     ADMIN_BOOTSTRAP_NAME: str = "HealthSynch Admin"
     ADMIN_BOOTSTRAP_EMAIL: str = "healthsynch_admin007@example.com"
     ADMIN_BOOTSTRAP_USERNAME: str = "healthsynch_admin007"
-    ADMIN_BOOTSTRAP_PASSWORD: str = ")(*&Hs0191."
+    ADMIN_BOOTSTRAP_PASSWORD: str | None = None
     ADMIN_BOOTSTRAP_FORCE_PASSWORD_SYNC: bool = False
     SHURJOPAY_API_ROOT: str | None = None
     SHURJOPAY_API_URL: str = "https://engine.shurjopayment.com"
@@ -260,23 +260,17 @@ class Settings(BaseSettings):
         self.DATABASE_URL_UNPOOLED = self._normalize_postgres_scheme(self.DATABASE_URL_UNPOOLED)
         self.SQLALCHEMY_DATABASE_URI = self._normalize_postgres_scheme(self.SQLALCHEMY_DATABASE_URI)
 
-        default_neon_pooled = (
-            "postgresql://neondb_owner:npg_AkpiGy2QCzX4@ep-square-butterfly-amy3rqym-pooler.c-5.us-east-1.aws.neon.tech/"
-            "neondb?channel_binding=require&sslmode=require"
-        )
-        default_neon_unpooled = (
-            "postgresql://neondb_owner:npg_AkpiGy2QCzX4@ep-square-butterfly-amy3rqym.c-5.us-east-1.aws.neon.tech/"
-            "neondb?sslmode=require"
-        )
-
-        if not self.DATABASE_URL or self._looks_like_placeholder_database_url(self.DATABASE_URL):
-            self.DATABASE_URL = default_neon_pooled
-        if not self.DATABASE_URL_UNPOOLED or self._looks_like_placeholder_database_url(self.DATABASE_URL_UNPOOLED):
-            self.DATABASE_URL_UNPOOLED = default_neon_unpooled
+        if self._looks_like_placeholder_database_url(self.DATABASE_URL):
+            self.DATABASE_URL = None
+        if self._looks_like_placeholder_database_url(self.DATABASE_URL_UNPOOLED):
+            self.DATABASE_URL_UNPOOLED = None
 
         if not self.SQLALCHEMY_DATABASE_URI:
-            self.SQLALCHEMY_DATABASE_URI = self.DATABASE_URL or "sqlite:///./healthsynch.db"
-        elif self.LOCAL_DB_MODE == "neon" and self._is_default_sqlite_uri(self.SQLALCHEMY_DATABASE_URI):
+            if self.LOCAL_DB_MODE == "neon" and self.DATABASE_URL:
+                self.SQLALCHEMY_DATABASE_URI = self.DATABASE_URL
+            else:
+                self.SQLALCHEMY_DATABASE_URI = "sqlite:///./healthsynch.db"
+        elif self.LOCAL_DB_MODE == "neon" and self._is_default_sqlite_uri(self.SQLALCHEMY_DATABASE_URI) and self.DATABASE_URL:
             self.SQLALCHEMY_DATABASE_URI = self.DATABASE_URL
         elif self.LOCAL_DB_MODE == "sqlite" and not self._is_default_sqlite_uri(self.SQLALCHEMY_DATABASE_URI):
             self.SQLALCHEMY_DATABASE_URI = "sqlite:///./healthsynch.db"
