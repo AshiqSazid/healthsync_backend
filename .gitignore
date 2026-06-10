@@ -1,0 +1,48 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pyc
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment and local secrets
+.env.local
+.env.production
+
+
+# Local databases and runtime artifacts
+*.db
+*.sqlite3
+*.log
+*.pid
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Build/distribution artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Uploaded/generated files
+uploads/
+
+# Editor/OS files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+.vercel

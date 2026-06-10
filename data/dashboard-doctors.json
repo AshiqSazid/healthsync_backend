@@ -1,0 +1,294 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. Shahidul Islam",
+      "specialization": "Dermatologist",
+      "experience_years": 10,
+      "license": "E89012",
+      "consultation_fee": "N/A",
+      "specializations": ["Dermatologist"],
+      "education": [
+        "MBBS - Rajshahi Medical College",
+        "DDV - BIRDEM",
+        "MD (Dermatology) - BSMMU"
+      ],
+      "chambers": [
+        {
+          "hospital": "Labaid Hospital",
+          "address": "House 06, Road 04, Dhanmondi, Dhaka-1205",
+          "days": "Sat, Mon, Wed",
+          "time": "02:00 PM - 06:00 PM",
+          "day_slots": 24,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Labaid+Hospital+House+06+Road+04+Dhanmondi+Dhaka-1205"
+        }
+      ]
+    },
+    {
+      "name": "Dr. SK Farid Ahmed",
+      "specialization": "Oncoplastic breast surgeon",
+      "experience_years": 20,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Oncoplastic breast surgeon"],
+      "education": [
+        "MBBS degree from Mymensingh Medical College in 1992",
+        "Surgical Fellowship (FRCS) from the Royal College of Physicians and Surgeons of Glasgow in 2000"
+      ],
+      "chambers": [
+        {
+          "hospital": "Breast Unit BRB Hospital Ltd.",
+          "address": "Panthapath, Dhanmondi, Dhaka",
+          "days": "Sat, Sun, Mon, Tue, Wed, Thur, Fri",
+          "time": "10:00 AM - 02:00 PM",
+          "day_slots": 24,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=BRB+Hospital+Panthapath+Dhanmondi+Dhaka"
+        },
+        {
+          "hospital": "Labaid Cancer Hospital",
+          "address": "26 Green Rd, Dhanmondi, Dhaka 1205",
+          "days": "Sat, Sun, Mon, Tue, Wed, Thur, Fri",
+          "time": "07:00 PM - 10:00 AM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Labaid+Cancer+Hospital+26+Green+Rd+Dhanmondi+Dhaka+1205"
+        }
+      ]
+    },
+    {
+      "name": "Prof. Syed Md. Akram Hussain",
+      "specialization": "Clinical Oncology & Radiotherapy",
+      "experience_years": 32,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Clinical Oncology & Radiotherapy"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "FCPS - Fellowship of College of Physicians & Surgeons",
+        "FRCP (Glasgow) - Fellowship of Royal College of Physicians",
+        "FRCP (Edinburgh) - Fellowship of Royal College of Physicians",
+        "FACP (USA) - Fellow of the American College of Physicians",
+        "MRCR (UK) - Member, Royal College of Radiologists"
+      ],
+      "chambers": [
+        {
+          "hospital": "Square Hospitals Ltd",
+          "address": "18/F, Bir Uttam Qazi Nuruzzaman Sarak, Panthapath, 12, Dhanmondi, Dhaka-1205, Bangladesh",
+          "days": "Sat, Sun, Mon, Tue, Wed, Thur",
+          "time": "06:00 PM - 08:00 PM",
+          "day_slots": 0,
+          "night_slots": 12,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Square+Hospitals+Ltd+Panthapath+Dhanmondi+Dhaka-1205"
+        }
+      ]
+    },
+    {
+      "name": "Prof. Dr. Qazi Mushtaq Hussain",
+      "specialization": "Clinical Oncology",
+      "experience_years": 25,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Clinical Oncology"],
+      "education": [
+        "MBBS M.Phil (Oncology)",
+        "Training (India)"
+      ],
+      "chambers": [
+        {
+          "hospital": "Labaid Specialized Hospital | Dhanmondi",
+          "address": "House: 1 and 6, Road No 4, Mirpur Road, Dhanmondi, 32, Dhanmondi, Dhaka-1205, Bangladesh",
+          "days": "Sat, Mon, Wed",
+          "time": "05:00 PM - 07:00 PM",
+          "day_slots": 6,
+          "night_slots": 6,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Labaid+Specialized+Hospital+Dhanmondi+Dhaka-1205"
+        }
+      ]
+    },
+    {
+      "name": "Dr. Rashed Imam Zahid",
+      "specialization": "Neuromedicine Specialist",
+      "experience_years": 20,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Neuromedicine Specialist"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "BCS (Health) - Bangladesh Civil Service",
+        "MD - Masters of Surgery"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital | Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216, Bangladesh",
+          "days": "Sun, Tues",
+          "time": "4:00 PM - 6:00 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "Assoc. Prof. Dr. Mohammad Masudur Rahman",
+      "specialization": "Neuromedicine",
+      "experience_years": 28,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Neuromedicine"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "BCS (Health) - Bangladesh Civil Service",
+        "MD (Neurology) - Doctor of Medicine"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital, Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216, Bangladesh",
+          "days": "Sat, Sun, Mon",
+          "time": "6:00 PM to 9:00 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "Dr. A.F.M Al Masum Khan",
+      "specialization": "Neuromedicine Specialist",
+      "experience_years": 20,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Neuromedicine Specialist"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "BCS (Health) - Bangladesh Civil Service",
+        "MD - Masters of Surgery"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital | Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216, Bangladesh",
+          "days": "Sat, Sun, Tue, Wed, Thur",
+          "time": "6:00 PM to 8:00 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "Dr. Md. Khairul Kabir",
+      "specialization": "Neuromedicine",
+      "experience_years": 20,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Neuromedicine"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "BCS (Health) - Bangladesh Civil Service",
+        "MD - Masters of Surgery"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital | Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216",
+          "days": "Sun, Tues, Thur",
+          "time": "3:00 PM to 5:00 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "Dr. Md. Zakirul Islam Jewel",
+      "specialization": "Medicine Specialist",
+      "experience_years": 13,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Medicine Specialist", "Neuromedicine"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery",
+        "BCS (Health) - Bangladesh Civil Service",
+        "FCPS (Medicine) - Fellow of College of Physicians and Surgeons Pakistan"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital | Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216, Bangladesh",
+          "days": "Sat, Mon, Tues, Wed",
+          "time": "4:30 PM to 9:00 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "Dr. Humayun Kabir Himu",
+      "specialization": "Neurology",
+      "experience_years": 0,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Neurology"],
+      "education": ["N/A"],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Medical College Hospital, Kallyanpur",
+          "address": "Kallyanpur 1/1, Mirpur Road, Kallyanpur, Dhaka-1216",
+          "days": "Sat, Sun, Mon, Wed, Thur",
+          "time": "7:00 PM - 9:30 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Medical+College+Hospital+Kallyanpur+Dhaka-1216"
+        }
+      ]
+    },
+    {
+      "name": "DR. A. M. Shafique",
+      "specialization": "Cardiologist",
+      "experience_years": 35,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Cardiologist", "Cardiac Surgeon"],
+      "education": ["MBBS - Dhaka Medical College Hospital - 2001"],
+      "chambers": [
+        {
+          "hospital": "United Hospital Limited",
+          "address": "Plot: 15, Road: 71, Gulshan 2, 9, Gulshan, Dhaka-1212, Bangladesh",
+          "days": "Sat, Wed",
+          "time": "8:00 AM - 06:00 PM",
+          "day_slots": 60,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=United+Hospital+Limited+Plot+15+Road+71+Gulshan+Dhaka-1212"
+        }
+      ]
+    },
+    {
+      "name": "Prof. Dr. Zafor Md. Masud",
+      "specialization": "Oncologist",
+      "experience_years": 19,
+      "license": "Coming Soon",
+      "consultation_fee": "N/A",
+      "specializations": ["Oncologist", "Cancer Specialist"],
+      "education": [
+        "MBBS - Bachelor of Medicine and Bachelor of Surgery - 1999",
+        "M.Phil - Bangabandhu Sheikh Mujib Medical University (BSMMU) - 2004",
+        "FCPS - Fellow of College of Physicians and Surgeons - 1999"
+      ],
+      "chambers": [
+        {
+          "hospital": "Ibn Sina Specialized Hospital | Dhanmondi",
+          "address": "House#68, Road#15/A, Dhanmondi, Dhaka-1209",
+          "days": "Saturday, Monday, Wednesday, Thursday",
+          "time": "01:30 PM - 03:30 PM",
+          "day_slots": 0,
+          "night_slots": 0,
+          "google_maps": "https://www.google.com/maps/search/?api=1&query=Ibn+Sina+Specialized+Hospital+Dhanmondi+House+68+Road+15A+Dhaka-1209"
+        }
+      ]
+    }
+  ]
+}
